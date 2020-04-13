@@ -1,3 +1,3 @@
 browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="0">\n<system/>\n</web-browsers>
 eclipse.preferences.version=1
-internalWebBrowserHistory=http\://localhost\:9130/exam31/TenServlet|*|http\://localhost\:9130/firstweb_01/Helloservlet|*|
+internalWebBrowserHistory=http\://localhost\:9130/firstweb_01/LifeCycleServlet|*|http\://localhost\:9130/exam31/TenServlet|*|http\://localhost\:9130/firstweb_01/Helloservlet|*|

@@ -5,3 +5,10 @@
 0:0:0:0:0:0:0:1 - - [13/Apr/2020:15:56:05 +0900] "GET /firstweb_01/Helloservlet HTTP/1.1" 200 22
 127.0.0.1 - - [13/Apr/2020:17:10:50 +0900] "GET / HTTP/1.1" 404 750
 0:0:0:0:0:0:0:1 - - [13/Apr/2020:17:10:50 +0900] "GET /exam31/TenServlet HTTP/1.1" 200 76
+127.0.0.1 - - [13/Apr/2020:17:43:33 +0900] "GET / HTTP/1.1" 404 750
+0:0:0:0:0:0:0:1 - - [13/Apr/2020:17:43:33 +0900] "GET /firstweb_01/LifeCycleServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [13/Apr/2020:17:46:49 +0900] "GET /firstweb_01/LifeCycleServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [13/Apr/2020:17:46:50 +0900] "GET /firstweb_01/LifeCycleServlet HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2020:18:57:35 +0900] "GET / HTTP/1.1" 404 750
+0:0:0:0:0:0:0:1 - - [13/Apr/2020:18:57:35 +0900] "GET /firstweb_01/LifeCycleServlet HTTP/1.1" 200 208
+0:0:0:0:0:0:0:1 - - [13/Apr/2020:18:57:54 +0900] "GET /firstweb_01/LifeCycleServlet HTTP/1.1" 200 208
