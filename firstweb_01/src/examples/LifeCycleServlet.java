@@ -30,7 +30,7 @@ public class LifeCycleServlet extends HttpServlet {
 	
 	public void destroy() {
 		System.out.println("destroy 호출");
-		// TODO Auto-generated method stub
+		// 서블릿이 수정되면 기존의 서블릿 객체 destroyed
 	}
 
 
