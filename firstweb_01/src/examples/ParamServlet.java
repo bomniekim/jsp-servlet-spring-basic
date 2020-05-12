@@ -21,7 +21,6 @@ public class ParamServlet extends HttpServlet {
      */
     public ParamServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
