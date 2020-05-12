@@ -19,7 +19,7 @@ public class LifeCycleServlet extends HttpServlet {
        
    
     public LifeCycleServlet() {
-       System.out.println("LifeCycleServlet 생성");
+       System.out.println("LifeCycleServlet 생성!");
     }
 
 
