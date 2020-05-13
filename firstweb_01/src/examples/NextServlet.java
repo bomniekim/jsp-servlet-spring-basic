@@ -40,7 +40,7 @@ public class NextServlet extends HttpServlet {
 
 		// 전달 받은 request 객체에 저장된 "diceValue"라는 이름의 값을 얻어내
 		// 얻어낸 값의 타입은 Object 이므로 적절한 형변환이 필요
-        // 여기서는I Integer로...
+        // 여기서는 Integer로
 
         int dice = (Integer)request.getAttribute("diceValue");
         // FrontServlet 에서 받아온 랜덤 값의 수만큼 hello 표

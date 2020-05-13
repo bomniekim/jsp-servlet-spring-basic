@@ -35,6 +35,7 @@ public class FrontServlet extends HttpServlet {
 		// (세탁소에 옷을 맡길 때 알려주는 이름과 같다고 보면 됨)
 		// 값의 타입은 Object (모든 타입의 값을 저장할 수 있도록)
 		// 추후 값을 얻어낼 때도 Object 타입으로 받음
+		
 		request.setAttribute("diceValue", diceValue);
 		
 		
