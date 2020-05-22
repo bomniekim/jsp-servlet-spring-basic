@@ -228,13 +228,13 @@ public class RoleDao {
 				try {
 					ps.close();
 				}catch(Exception ex) {}
-			} // if
+			} 
 			
 			if(conn != null) {
 				try {
 					conn.close();
 				}catch(Exception ex) {}
-			} // if
+			} 
 		} // finally
 
 		return deleteCount;
