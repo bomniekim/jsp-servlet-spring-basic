@@ -30,7 +30,7 @@ public class Role {
 	}
 	
 	
-	// Role 객체가 가진 값들을 쉽게 출력할 수 있도록
+	// Role 객체가 가진 값들을 쉽게 출력할 수 있도록 /
 	@Override
 	public String toString() {
 		return "Role [roleId=" + roleId + ", desc=" + description + "]";
