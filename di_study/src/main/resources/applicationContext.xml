@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 스프링에게 정보를 주기 위한 파일 / 스프링 컨테이너가 읽어들이는 설정 파일 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd">
+						<!-- Root Element -->
+
+	<!-- new로 객체를 생성하는 것과 같은 의미 -->
+	<bean id="userBean" class="bomnie.di_study.UserBean" />
+	
+	
+	<bean id="e" class="bomnie.di_study.Engine" />
+	<bean id="c" class="bomnie.di_study.Car">
+		<property name="engine" ref="e" /> <!-- c.setEngine(e)와 같은 의미: 의존성 주 -->
+		<!-- property는 getter or setter의 의미인데 <bean> 안에서는 값을 설정하는 의미 == setter -->
+		
+	</bean>
+</beans>
+
+
