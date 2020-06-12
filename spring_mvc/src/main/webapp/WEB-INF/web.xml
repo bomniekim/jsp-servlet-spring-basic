@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+version="3.1">
+
+  <display-name>Spring JavaConfig Sample</display-name>
+
+<!-- spring에서 제공하는 DispatcherServlet이 FrontController의 역할을 함 -->
+  <servlet>
+    <servlet-name>mvc</servlet-name>
+    <!-- 실제로 동작시킬 클래스 (dispatcherServlet 클래스는 스프링이 자체 제공) -->
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextClass</param-name>
+      <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+    </init-param>
+    <init-param>
+    <!-- 실제 dispatcherServlet이 할 일을 지정 -->
+      <param-name>contextConfigLocation</param-name>
+      <param-value>bomnie.spring_mvc.config.WebMvcContextConfiguration</param-value>
+
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mvc</servlet-name>
+    <!-- 모든 요청을 받도록 '/'로 지정 -->
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
