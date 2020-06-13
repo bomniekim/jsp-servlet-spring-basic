@@ -12,6 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
+// Web에 필요한 bean들을 대부분 자동으로 설정
 @ComponentScan(basePackages = { "bomnie.guestbook.controller" })
 public class WebMvcContextConfiguration extends WebMvcConfigurerAdapter{
 
