@@ -8,8 +8,8 @@
 </head>
 <body>
 	<form action="plus" method="post">
-		value1: <input type="text" name="value1" /> <br />
-		value2: <input type="text" name="value2"/> <br />
+		value1: <input type="text" name="value1" /> <br>
+		value2: <input type="text" name="value2"/> <br>
 		<input type="submit" value="save" />
 	</form>
 </body>
