@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class PlusController {
 	@GetMapping(path="/plusform")
 	public String plusform() {
-		return "plusForm"; // plusform.jsp를 보여줌
+		return "plusForm"; // plusForm.jsp를 보여줌
 	}
 
 	@PostMapping(path = "/plus")
