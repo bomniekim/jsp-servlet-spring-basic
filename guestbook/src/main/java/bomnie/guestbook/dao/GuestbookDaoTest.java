@@ -25,7 +25,7 @@ public class GuestbookDaoTest {
 //		guestbook.setRegDate(new Date());
 //		
 //		Long id = guestbookDao.insert(guestbook); // 생성된 id 값 리턴
-//		System.out.println("id: "+id + " 개의 레코드가 추가되었습니다.");
+//		System.out.println("id: "+id + "개의 레코드가 추가되었습니다.");
 		
 		LogDao logDao = ac.getBean(LogDao.class);
 		
