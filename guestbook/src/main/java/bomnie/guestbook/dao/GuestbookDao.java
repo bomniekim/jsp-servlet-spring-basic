@@ -34,6 +34,8 @@ public class GuestbookDao {
 		// SimpleJdbcInsert 객체 생성
 		this.insertAction = new SimpleJdbcInsert(dataSource).withTableName("guestbook").usingGeneratedKeyColumns("id");
 	}
+	
+	
 
 	// select all
 	public List<Guestbook> selectAll(Integer start, Integer limit) {
@@ -45,6 +47,9 @@ public class GuestbookDao {
 		return template.query(SELECT_PAGING, paramMap, rowMapper);
 	}
 
+	
+	
+	
 	// insert
 	public Long insert(Guestbook guestbook) {
 		// guestbook 객체의 변수를 DB 컬럼명에 맞추어 Map 반환
@@ -55,6 +60,9 @@ public class GuestbookDao {
 		return insertAction.executeAndReturnKey(paramMap).longValue();
 	}
 	
+	
+	
+	
 	// delete by id
 	public int deleteById(Long id) {
 		// singletonMap() : 1 개의 값을 Map 으로 반환
@@ -63,7 +71,9 @@ public class GuestbookDao {
 		return template.update(DELETE_BY_ID, paramMap);
 	}
 	
-	// select count (레코드 개수 조회)
+	
+	
+	// 전체 레코드 개수 조회
 	public int selectCount() {
 		Map<String, ?> paramMap = Collections.emptyMap();
 		return template.queryForObject(SELECT_COUNT, paramMap, Integer.class);
