@@ -60,11 +60,12 @@ public class GuestbookServiceImpl implements GuestbookService {
 		Long id = guestbookDao.insert(guestbook);
 		guestbook.setId(id); // 로그 입력을 위해
 		
+		
 //		if(1==1) throw new RuntimeException("test");
 		// transaction은 나눌 수 없는 하나의 작업 단위
 		// 중간에 exception/error 발생 시 성공했던 작업도 취소 - 트랜잭션의 '원자성'
 		
-		
+	
 		// 입력 후 log 남기기
 		Log log = new Log();
 		log.setIp(ip);
@@ -82,4 +83,5 @@ public class GuestbookServiceImpl implements GuestbookService {
 	public int getCount() { 
 		return guestbookDao.selectCount();
 	}
+	
 }
