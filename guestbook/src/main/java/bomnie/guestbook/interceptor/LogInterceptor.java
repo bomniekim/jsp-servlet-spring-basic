@@ -30,7 +30,11 @@ public class LogInterceptor extends HandlerInterceptorAdapter {
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
 		
-		logger.debug("{} 가 종료되었습니다. {} 를 view로 사용합니다.", handler.toString(), modelAndView.getViewName());
+		if(modelAndView != null) {			
+			logger.debug("{} 가 종료되었습니다. {} 를 view로 사용합니다.", handler.toString(), modelAndView.getViewName());
+		} else {
+			logger.debug("{} 가 종료되었습니다.", handler.toString());
+		}
 		// {} 에 해당하는 값을 인자로 각각 매핑
 //		System.out.println(handler.toString() + " 가 종료되었습니다.  " + modelAndView.getViewName() + "을 view로 사용합니다.");
 	}
