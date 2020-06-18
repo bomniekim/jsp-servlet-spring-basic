@@ -13,7 +13,7 @@
 	 <!-- 파일 업로드를 위해선 반드시 method=post & enctype=multipart/form-data 으로 지정  -->
 
     file : <input type="file" name="file"><br/>
-        <input type="submit">
+        <input type="submit" value="올리기">
  </form>    
 </body>
 </html>   
