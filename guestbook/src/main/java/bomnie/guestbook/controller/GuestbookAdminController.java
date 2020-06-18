@@ -34,4 +34,10 @@ public class GuestbookAdminController {
 		}
 		return "redirect:/list";
 	}
+	
+    @GetMapping(path="/logout")
+		public String logout(HttpSession session) {
+			session.removeAttribute("isAdmin");
+			return "redirect:/list";
+	}
 }
