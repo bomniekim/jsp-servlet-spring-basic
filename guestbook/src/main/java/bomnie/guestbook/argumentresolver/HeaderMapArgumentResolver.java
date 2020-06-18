@@ -12,7 +12,7 @@ public class HeaderMapArgumentResolver implements HandlerMethodArgumentResolver{
 
 	@Override
 	public boolean supportsParameter(MethodParameter parameter) {
-		// controller 메서드의 인자 개수에 맞추어 매번 호출됨
+		// 구현한 controller 메서드의 인자 개수에 따라 매번 호출됨
 		// 인자의 정보를 파라미터로 전달
 		// 해당 파라미터 정보에 원하는 정보가 있다면 true 반환 
 		return parameter.getParameterType() == HeaderInfo.class;
