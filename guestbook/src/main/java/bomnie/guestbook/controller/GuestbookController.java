@@ -129,7 +129,7 @@ public class GuestbookController {
 			return "redirect:loginform";
 		}
 		
-		// 클라이언트의 ip 얻어오기
+		// 클라이언트의 ip 얻어와서 log 찍기
 		String clientIp = request.getRemoteAddr();
 		guestbookService.deleteGuestbook(id, clientIp);
 		return "redirect:list";		
