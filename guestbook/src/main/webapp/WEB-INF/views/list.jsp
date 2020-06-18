@@ -9,7 +9,7 @@
 </head>
 <body>
  	<h1>방명록</h1>
- 	<br /> 방명록 전체 수 : ${count} 방문 횟수 : ${cookieCnt}
+ 	<br /> 방명록 전체 수 : ${count} / 방문 횟수 : ${cookieCnt}
  	<br />
  	<br />
 	<c:forEach items="${list}" var="guestbook">
@@ -22,7 +22,7 @@
 	</c:forEach>
 	<br />
 	
-	<!-- status.index : 0 부터 레코드의 순서 -->
+	<!-- status.index : 0 부터 레코드 순서 시작 -->
 	<c:forEach items="${pageStartList}" var="pageStart" varStatus="status">
 		<a href="list?start=${pageStart}">${status.index + 1}</a>
 		&nbsp;&nbsp;
