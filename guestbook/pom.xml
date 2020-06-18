@@ -21,7 +21,22 @@
 
   <dependencies>
   
-  		<!-- 로깅 관련 -->
+  		<!-- Multipart 파일 업로드 -->
+		<!-- apache commons-fileupload -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.4</version>
+		</dependency>
+		
+		<!-- apache commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+  
+  		<!-- 로깅 -->
 		<!-- slf4j-api (logback-classic 1.2.3 라이브러리 추가 시 자동으로 추가되므로 생략 가능) -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -82,12 +97,13 @@
 			<version>1.2</version>
 		</dependency>
   
-  <!-- spring-jdbc -->
+  		<!-- spring-jdbc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+		
 		<!-- spring-tx -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -102,6 +118,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.18</version>
 		</dependency>
+		
 		<!-- data source -->
 		<!-- commons-dbcp2 -->
 		<dependency>
@@ -117,18 +134,20 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>${com.fasterxml.jackson.core-version}</version>
 		</dependency>
+		
 		<!-- jackson-datatype-jdk8 -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
 			<artifactId>jackson-datatype-jdk8</artifactId>
 			<version>${com.fasterxml.jackson.core-version}</version>
 		</dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
+
+	    <dependency>
+    	  	<groupId>junit</groupId>
+      		<artifactId>junit</artifactId>
+      		<version>4.11</version>
+      		<scope>test</scope>
+    	</dependency>
   </dependencies>
 
   <build>
