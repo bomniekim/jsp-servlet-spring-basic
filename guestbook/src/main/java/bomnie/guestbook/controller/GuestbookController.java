@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import bomnie.guestbook.argumentresolver.HeaderInfo;
 import bomnie.guestbook.dto.Guestbook;
 import bomnie.guestbook.service.GuestbookService;
 
@@ -29,10 +30,15 @@ public class GuestbookController {
 
 	@GetMapping(path="/list")
 	public String list(@RequestParam(name="start", required=false, defaultValue="0") int start,
-			   ModelMap model, @CookieValue(value="visitCount", defaultValue = "0", required = true) String visitCnt, HttpServletResponse response) {
+			   ModelMap model, @CookieValue(value="visitCount", defaultValue = "0", required = true) String visitCnt,
+			   HttpServletResponse response, HeaderInfo headerInfo) {
 
 		// HttpServletRequest request 대신 spring mvc에서 제공하는 어노테이션 사용 
 		//@CookieValue : 쿠키 값을 인자에 저장해서 사용 가능 - 아래 주석처리 한 코드를 줄일 수 있음 
+		
+		System.out.println("-----------------------------------------------------");
+		System.out.println(headerInfo.get("user-agent"));
+		System.out.println("-----------------------------------------------------");
 		
 		
 		// 쿠키를 이용한 방문 횟수 구현
