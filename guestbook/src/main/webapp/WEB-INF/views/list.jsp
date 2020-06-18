@@ -17,8 +17,7 @@
 		${guestbook.name} <br />
 		${guestbook.content} <br />
 		${guestbook.regDate} <br />
-		<c:if test="${sessionScope.isAdmin == 'true'}">
-		<a href="delete?id=${guestbook.id}">삭제</a><br><br></c:if>
+		<c:if test="${sessionScope.isAdmin == 'true'}"><a href="delete?id=${guestbook.id}">삭제</a><br><br></c:if>
 	</c:forEach>
 	<br />
 	
