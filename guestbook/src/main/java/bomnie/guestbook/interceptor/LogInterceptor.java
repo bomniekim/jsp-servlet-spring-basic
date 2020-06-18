@@ -26,3 +26,6 @@ public class LogInterceptor extends HandlerInterceptorAdapter {
 	}
 
 }
+
+// Interceptor는 Dispatcher servlet에서 Handler(Controller)로 요청을 보낼 때,
+// Handler에서 Dispathcer servlet으로 응답을 보낼 때 동작합니다.
