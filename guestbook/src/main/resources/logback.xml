@@ -11,7 +11,7 @@
 	<!-- RollingFileAppender 파일에 로그 남기기 (일자별 로그 관리)-->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
     	<!-- 로그 파일 저장 경로 설정 -->
-        <file>/User/bomnie/Desktop/access.log</file>
+        <file>/tmp/access.log</file>
         
          <!-- 파일명 포맷, 최대 로그 수 설정 -->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
