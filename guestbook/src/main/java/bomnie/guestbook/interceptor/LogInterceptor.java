@@ -10,7 +10,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 public class LogInterceptor extends HandlerInterceptorAdapter {
 	
-	// logger 객체 생성 
+	// Logger 객체 생성 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	// controller 가 실행되기 전에 실행
