@@ -24,7 +24,7 @@
 			<!-- 사용하는 mysql 버전과 일치시킴 -->
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.18</version>
+			<version>8.0.28</version>
 		</dependency>
     <dependency>
       <groupId>junit</groupId>
