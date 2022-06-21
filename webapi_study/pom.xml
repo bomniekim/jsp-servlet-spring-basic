@@ -28,7 +28,7 @@
   		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.18</version>
+			<version>8.0.28</version>
 		</dependency>
 		
 		<!-- json 라이브러리: databind jackson-core, jackson-annotaion에 의존성이 있음 -->
